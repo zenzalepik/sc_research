@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway Neon List 2025</title>
+    <style>
+        :root {
+            --bg-color: #050510;
+            --card-bg: #0f0f1f;
+            --text-main: #ffffff;
+            --text-muted: #a0a0b0;
+            --neon-blue: #00f3ff;
+            --neon-pink: #ff00ff;
+            --neon-green: #00ff9d;
+            --neon-purple: #bd00ff;
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-color);
+            background-image:
+                radial-gradient(circle at 10% 20%, rgba(189, 0, 255, 0.15) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(0, 243, 255, 0.15) 0%, transparent 20%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+            font-weight: 800;
+        }
+
+        p.subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            margin-bottom: 50px;
+            font-size: 1.1em;
+            letter-spacing: 1px;
+        }
+
+        /* Glassmorphism Table Styling */
+        .table-wrapper {
+            background: rgba(15, 15, 31, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Glowing Border Animation */
+        .table-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-pink), var(--neon-green));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95em;
+        }
+
+        th {
+            text-align: left;
+            padding: 20px 25px;
+            color: var(--neon-blue);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.8em;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        td {
+            padding: 20px 25px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            vertical-align: middle;
+            transition: all 0.3s ease;
+        }
+
+        tr {
+            transition: all 0.3s ease;
+        }
+
+        tr:hover {
+            background: rgba(255, 255, 255, 0.03);
+            box-shadow: 0 0 20px rgba(0, 243, 255, 0.05);
+        }
+
+        tr:hover td {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        /* Badges */
+        .badge {
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-size: 0.75em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: inline-block;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .tier-1 {
+            background: linear-gradient(135deg, #006400, #00ff9d);
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 255, 157, 0.4);
+        }
+
+        .tier-2 {
+            background: linear-gradient(135deg, #003366, #00f3ff);
+            color: #000;
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
+        }
+
+        .tier-3 {
+            background: linear-gradient(135deg, #660066, #ff00ff);
+            color: #fff;
+            box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+        }
+
+        /* Links */
+        .btn-glow {
+            text-decoration: none;
+            color: var(--neon-blue);
+            border: 1px solid var(--neon-blue);
+            padding: 8px 15px;
+            border-radius: 8px;
+            font-size: 0.8em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+        }
+
+        .btn-glow:hover {
+            background: var(--neon-blue);
+            color: #000;
+            box-shadow: 0 0 20px var(--neon-blue);
+            transform: translateY(-2px);
+        }
+
+        /* Specific text colors */
+        .price-va {
+            color: var(--neon-green);
+            font-weight: 600;
+        }
+
+        .price-qris {
+            color: var(--neon-pink);
+            font-weight: 600;
+        }
+
+        .text-cons {
+            color: var(--text-muted);
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #050510;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            th,
+            td {
+                padding: 15px 10px;
+                font-size: 0.85em;
+            }
+
+            .badge {
+                font-size: 0.65em;
+                padding: 4px 8px;
+            }
+        }
+    </style>
+    <!-- Font for futuristic look -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>PAYMENT GATEWAY 2025</h1>
+        <p class="subtitle">---</p>
+
+        <div class="table-wrapper">
+            <div style="overflow-x:auto;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th width="3%">#</th>
+                            <th width="15%">Provider</th>
+                            <th width="10%">Asal</th>
+                            <th width="12%">Kasta</th>
+                            <th width="15%">Biaya VA</th>
+                            <th width="10%">QRIS</th>
+                            <th>Keterangan</th>
+                            <th width="8%">Akses</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- MIDTRANS -->
+                        <tr>
+                            <td>1</td>
+                            <td><strong>Midtrans</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-1">Raksasa</span></td>
+                            <td class="price-va">Rp 4.000+</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Fitur terlengkap, standar industri, tapi dokumentasi menakutkan bagi
+                                pemula.</td>
+                            <td><a href="https://midtrans.com/id/biaya" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- XENDIT -->
+                        <tr>
+                            <td>2</td>
+                            <td><strong>Xendit</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-1">Raksasa</span></td>
+                            <td class="price-va">Rp 4.500</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">UI Dashboard terbaik (Sangat Modern), UX juara, biaya VA agak mahal.
+                            </td>
+                            <td><a href="https://www.xendit.co/id/biaya/" target="_blank" class="btn-glow">VISIT</a>
+                            </td>
+                        </tr>
+                        <!-- DOKU -->
+                        <tr>
+                            <td>3</td>
+                            <td><strong>DOKU</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-1">Raksasa</span></td>
+                            <td class="price-va">Rp 3.000+</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Pemain paling senior (Sepuh), sangat korporat, stabilitas tinggi.</td>
+                            <td><a href="https://www.doku.com/harga" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- FLIP -->
+                        <tr>
+                            <td>4</td>
+                            <td><strong>Flip Business</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-1">Raksasa</span></td>
+                            <td class="price-va" style="color:#ff6b6b">N/A*</td>
+                            <td class="price-qris">-</td>
+                            <td class="text-cons">Jagonya KIRIM uang (Disbursement Rp 1.800). Bukan untuk terima VA
+                                customer.</td>
+                            <td><a href="https://flip.id/business/pricing" target="_blank" class="btn-glow">VISIT</a>
+                            </td>
+                        </tr>
+                        <!-- NICEPAY -->
+                        <tr>
+                            <td>5</td>
+                            <td><strong>Nicepay</strong></td>
+                            <td>🇰🇷 Korea</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">Rp 4.000+</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Teknologi Korea, sangat handal untuk volume besar, marketing senyap.
+                            </td>
+                            <td><a href="https://nicepay.co.id/id/pricing/" target="_blank" class="btn-glow">VISIT</a>
+                            </td>
+                        </tr>
+                        <!-- FASPAY -->
+                        <tr>
+                            <td>6</td>
+                            <td><strong>Faspay</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">Rp 4.000</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Fokus utama di industri Hotel & Travel. Pemain lama yang solid.</td>
+                            <td><a href="https://faspay.co.id/id/harga/" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- DUITKU -->
+                        <tr>
+                            <td>7</td>
+                            <td><strong>Duitku</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">Rp 3.000</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Dokumentasi simpel, sangat dicintai developer lokal, proses gampang.
+                            </td>
+                            <td><a href="https://www.duitku.com/harga/" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- PRISMALINK -->
+                        <tr>
+                            <td>8</td>
+                            <td><strong>Prismalink</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">Variatif</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Spesialis "White Label". Orang di balik layar sistem bank besar.</td>
+                            <td><a href="https://prismalink.co.id/harga-promo-payment-gateway-2/" target="_blank"
+                                    class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- ESPAY -->
+                        <tr>
+                            <td>9</td>
+                            <td><strong>Espay</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">Rp 3.000+</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Fokus B2B Supply Chain & E-commerce, sistem pembayaran tagihan (Bill).
+                            </td>
+                            <td><a href="https://espay.id/v2-biaya/" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- RATAPAY -->
+                        <tr>
+                            <td>10</td>
+                            <td><strong>Ratapay</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-3">Baru</span></td>
+                            <td class="price-va">Rp 1.000</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Paling murah meriah (Flat Rp 1k). Cocok buat efisiensi budget UMKM.
+                            </td>
+                            <td><a href="https://ratapay.co.id/" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- WINPAY -->
+                        <tr>
+                            <td>11</td>
+                            <td><strong>Winpay</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-3">Baru</span></td>
+                            <td class="price-va">Mulai Rp 2k</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Alternatif murah yang solid, ramah untuk toko online kecil.</td>
+                            <td><a href="https://www.winpay.id/daftar-harga/" target="_blank" class="btn-glow">VISIT</a>
+                            </td>
+                        </tr>
+                        <!-- MAYAR -->
+                        <tr>
+                            <td>12</td>
+                            <td><strong>Mayar</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-3">Baru</span></td>
+                            <td class="price-va">Rp 4.500</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Fitur unik: Jual Ebook/Kelas/Webinar (Creator Economy). UI Modern.
+                            </td>
+                            <td><a href="https://mayar.id/pricing" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- TRIPAY -->
+                        <tr>
+                            <td>13</td>
+                            <td><strong>Tripay</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-3">Baru</span></td>
+                            <td class="price-va">Rp 4.250</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Raja di ekosistem Server Pulsa & Voucher Game. Support payment
+                                Alfamart.</td>
+                            <td><a href="https://tripay.co.id/" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- DURIANPAY -->
+                        <tr>
+                            <td>14</td>
+                            <td><strong>Durianpay</strong></td>
+                            <td>🇸🇬/🇮🇩</td>
+                            <td><span class="badge tier-3">Baru</span></td>
+                            <td class="price-va">Rp 4.000</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Agregator modern, satu dashboard banyak metode, UI/UX sangat slick.
+                            </td>
+                            <td><a href="https://www.durianpay.id/pricing" target="_blank" class="btn-glow">VISIT</a>
+                            </td>
+                        </tr>
+                        <!-- IPAYMU -->
+                        <tr>
+                            <td>15</td>
+                            <td><strong>Ipaymu</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">Rp 3.500+</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Punya fitur "Link Payment" yang memudahkan jualan di medsos tanpa web.
+                            </td>
+                            <td><a href="https://ipaymu.com/id/pricing/" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- HITPAY -->
+                        <tr>
+                            <td>16</td>
+                            <td><strong>HitPay</strong></td>
+                            <td>🇸🇬 SG</td>
+                            <td><span class="badge tier-3">Baru</span></td>
+                            <td class="price-va">Var</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">No-code POS Software gratis. Asal Singapura, ekspansi ke Indo.</td>
+                            <td><a href="https://hitpayapp.com/pricing" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- CASHUP -->
+                        <tr>
+                            <td>17</td>
+                            <td><strong>Cashup (Cashlez)</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">Hub Sales</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Rebranding dari Cashlez (Tbk). Fokus solusi pembayaran Offline/EDC.
+                            </td>
+                            <td><a href="https://cashup.id/pricing.html" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- PAYDIA -->
+                        <tr>
+                            <td>18</td>
+                            <td><strong>Paydia</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-3">Baru</span></td>
+                            <td class="price-va">Rp 4.000</td>
+                            <td class="price-qris">0.7%</td>
+                            <td class="text-cons">Fokus memberdayakan merchant UMKM dengan QRIS dan manajemen toko.</td>
+                            <td><a href="https://paydia.id/qris/" target="_blank" class="btn-glow">VISIT</a></td>
+                        </tr>
+                        <!-- E2PAY (Tambahan User) -->
+                        <tr>
+                            <td>19</td>
+                            <td><strong>E2Pay</strong></td>
+                            <td>🇮🇩 Indo</td>
+                            <td><span class="badge tier-2">Mapan</span></td>
+                            <td class="price-va">-</td>
+                            <td class="price-qris">-</td>
+                            <td class="text-cons">Solusi Biller Gateway & Payment Gateway Korporasi.</td>
+                            <td><a href="https://www.e2pay.co.id/produk/biaya" target="_blank"
+                                    class="btn-glow">VISIT</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 50px; color: #555; font-size: 0.8em;">
+            <p>---</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
