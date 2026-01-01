@@ -174,11 +174,11 @@ tr:last-child td {
     box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
 }
 
-/* Bank Check */
-.check-ok {
-    color: var(--neon-green);
-    font-weight: bold;
-    font-size: 1.2em;
+.tier-unknown {
+    background: linear-gradient(135deg, #222, #444);
+    color: #aaa;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 .check-no {
@@ -231,18 +231,86 @@ tr:last-child td {
 }
 
 @media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
 
     th,
     td {
-        padding: 10px 5px;
-        font-size: 0.75em;
+        padding: 12px 6px;
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    p.subtitle {
+        font-size: 0.9em;
+        margin-bottom: 30px;
+    }
+
+    /* Adjust Legend for Mobile */
+    .legend-container {
+        padding: 15px;
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .legend-row {
+        grid-template-columns: 60px 1fr;
+        gap: 15px;
+        justify-items: start;
+        /* Align items to start */
+    }
+
+    .legend-title {
+        text-align: center;
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+
+    /* Table adjustments */
+    th,
+    td {
+        padding: 10px 4px;
+        font-size: 0.7em;
     }
 
     .badge {
-        display: none;
+        font-size: 0.6em;
+        /* Scale down slightly instead of hiding */
+        padding: 3px 6px;
     }
 
-    /* Hide badges on small screens to save space */
+    /* Make checkmarks smaller */
+    .check-ok {
+        font-size: 1em;
+    }
+
+    /* Ensure scroll hint is visible */
+    .table-wrapper::after {
+        content: '← Geser untuk detail →';
+        display: block;
+        text-align: center;
+        padding: 10px;
+        color: var(--text-muted);
+        font-size: 0.8em;
+        font-style: italic;
+    }
 }
 
 /* Legend Section */
@@ -277,10 +345,19 @@ tr:last-child td {
 }
 
 .legend-row {
-    display: flex;
+    display: grid;
+    grid-template-columns: 80px 1fr;
     align-items: center;
     gap: 30px;
     margin-bottom: 12px;
+}
+
+.legend-row .badge {
+    justify-self: center;
+    /* Center badge within its column */
+    width: 100%;
+    /* Make badge fill its allotted width if needed, or keeping it centered */
+    text-align: center;
 }
 
 .legend-stars {
