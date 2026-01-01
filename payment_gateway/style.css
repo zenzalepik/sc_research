@@ -1,0 +1,290 @@
+:root {
+    --bg-color: #050510;
+    --card-bg: #0f0f1f;
+    --text-main: #ffffff;
+    --text-muted: #a0a0b0;
+    --neon-blue: #00f3ff;
+    --neon-pink: #ff00ff;
+    --neon-green: #00ff9d;
+    --neon-purple: #bd00ff;
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-color);
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(189, 0, 255, 0.15) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgba(0, 243, 255, 0.15) 0%, transparent 20%);
+    color: var(--text-main);
+    margin: 0;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 100%;
+    /* Full width to accommodate many columns */
+    padding: 0 40px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--neon-blue), var(--neon-purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
+    font-weight: 800;
+}
+
+p.subtitle {
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 50px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+/* Glassmorphism Table Styling */
+.table-wrapper {
+    background: rgba(15, 15, 31, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Glowing Border Animation */
+.table-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-pink), var(--neon-green));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85em;
+    /* Slightly smaller font for compactness */
+}
+
+th {
+    text-align: center;
+    /* Center align headers */
+    padding: 15px 10px;
+    color: var(--neon-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.75em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    white-space: nowrap;
+}
+
+/* First column alignment */
+th:first-child,
+td:first-child {
+    text-align: center;
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+    text-align: left;
+}
+
+/* Provider name left aligned */
+
+td {
+    padding: 15px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    vertical-align: middle;
+    text-align: center;
+    /* Default center for checks */
+    transition: all 0.3s ease;
+}
+
+td.text-cons {
+    text-align: left;
+    font-style: italic;
+    color: var(--text-muted);
+    font-size: 0.85em;
+}
+
+tr {
+    transition: all 0.3s ease;
+}
+
+tr:hover {
+    background: rgba(255, 255, 255, 0.03);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.05);
+}
+
+tr:hover td {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Badges */
+.badge {
+    padding: 4px 8px;
+    border-radius: 50px;
+    font-size: 0.7em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.tier-1 {
+    background: linear-gradient(135deg, #006400, #00ff9d);
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 255, 157, 0.4);
+}
+
+.tier-2 {
+    background: linear-gradient(135deg, #003366, #00f3ff);
+    color: #000;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
+}
+
+.tier-3 {
+    background: linear-gradient(135deg, #660066, #ff00ff);
+    color: #fff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+}
+
+/* Bank Check */
+.check-ok {
+    color: var(--neon-green);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.check-no {
+    color: #444;
+    font-size: 0.8em;
+}
+
+/* Links */
+.btn-glow {
+    text-decoration: none;
+    color: var(--neon-blue);
+    border: 1px solid var(--neon-blue);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 0.75em;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    white-space: nowrap;
+}
+
+.btn-glow:hover {
+    background: var(--neon-blue);
+    color: #000;
+    box-shadow: 0 0 20px var(--neon-blue);
+    transform: translateY(-2px);
+}
+
+/* Specific text colors */
+.price-qris {
+    color: var(--neon-pink);
+    font-weight: 600;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #050510;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+@media (max-width: 1024px) {
+
+    th,
+    td {
+        padding: 10px 5px;
+        font-size: 0.75em;
+    }
+
+    .badge {
+        display: none;
+    }
+
+    /* Hide badges on small screens to save space */
+}
+
+/* Legend Section */
+.legend-container {
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    padding: 25px 50px;
+    background: rgba(15, 15, 31, 0.8);
+    border-radius: 20px;
+    position: relative;
+    backdrop-filter: blur(10px);
+}
+
+.legend-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    padding: 2px;
+    background: linear-gradient(135deg, var(--neon-green), var(--neon-blue), var(--neon-pink));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.legend-title {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.legend-row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 12px;
+}
+
+.legend-stars {
+    color: #ffc107;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+}
